@@ -1,3 +1,78 @@
-root {
-    background-color: blue;
-};
+body {
+    color: white;
+    background-color: #3b3e47;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* Navbar Styles */
+
+    .navbar {
+        height: 50px;
+        background-color: #2b2d33;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navbar-link:link, .navbar-link:visited {
+        display: flex;
+        align-items: center;
+        margin-left: 5px;
+        margin-right: 5px;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        opacity: 1;
+        transition: .25s;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .navbar-link:hover {
+        opacity: .75;
+    }
+
+/* General Styles */
+
+    .page-header h1 {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .section-header h1 {
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+
+/* Landing Styles */
+
+
+
+/* Forum Styles */
+
+
+
+/* Hotlines Styles */
+
+
+
+/* About Styles */
+
+/* Footer Styles */
+
+    .footer-container {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 10rem;
+        background-color: #3b3e47;
+    }
+
+    .footer-header h1 {
+        display: flex;
+        justify-content: center;
+    }
