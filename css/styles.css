@@ -63,10 +63,14 @@ main {
 
 /* Landing Styles */
 
+    .landing-container {
+        height: 100vh;
+    }
 
 /* Category Styles */
 
     .categories-container {
+        height: 100vh;
         margin-bottom: 50px;
     }
 
@@ -101,11 +105,15 @@ main {
 
 /* Forum Styles */
 
-
+    .forum-container {
+        height: 100vh;
+    }
 
 /* About Styles */
 
-
+    .about-container {
+        height: 100vh;
+    }
 
 /* Footer Styles */
 
