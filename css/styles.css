@@ -67,7 +67,7 @@ main {
         height: 100vh;
     }
 
-/* Category Styles */
+/* Topic Styles */
 
     .categories-container {
         height: 100vh;
@@ -97,9 +97,12 @@ main {
         border: 5px solid #a83632;
         border-radius: 15px;
         background-color: #a83632;
+        color: white;
+        cursor: pointer;
     }
 
-    .item p {
+    .item:link, .item:visited {
+        text-decoration: none;
         color: white;
     }
 
@@ -108,6 +111,35 @@ main {
     .forum-container {
         height: 100vh;
     }
+
+    .forum-create-post {
+        margin-left: 250px;
+        background-color: #a83632;
+        border-radius: 5px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .forum-post-container {
+        margin-left: 250px;
+        margin-right: 250px;
+        background-color: #e2e2e2;
+        border-radius: 15px;
+    }
+
+    .forum-post-link {
+        padding: 10px;
+        text-decoration: none;
+        border: 5px solid black;
+        border-radius: 5px;
+    }
+
+    .forum-post-link a {
+        color: black;
+        text-decoration: none;
+    }
+
+
 
 /* About Styles */
 
@@ -118,6 +150,7 @@ main {
 /* Footer Styles */
 
     .footer-container {
+        margin-top: 100px;
         bottom: 0;
         width: 100%;
         height: 10rem;
