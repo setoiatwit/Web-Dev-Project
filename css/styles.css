@@ -12,47 +12,52 @@ main {
 
     .navbar {
         display: flex;
-        flex-direction: row;
-        height: 50px;
+        justify-content: space-between;
+        align-items: center;
         color: white;
         background-color: #325ba8;
     }
 
-    .navbar-header {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-left: 100px;
-        margin-right: 1000px;
-    }
+        .navbar-header {
+            font-size: 1rem;
+            margin: .5rem;
+            margin-left: 5rem;
+        }
 
-    .navbar-links-container {
-        display: flex;
-    }
+        .navbar-links-container {
+            display: flex;
+        }
 
-    .navbar-link:link, .navbar-link:visited {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-left: 25px;
-        color: white;
-        text-decoration: none;
-        opacity: 1;
-        transition: .25s;
-    }
+        .navbar-link:link, .navbar-link:visited {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 50px;
+            color: white;
+            text-decoration: none;
+            opacity: 1;
+            transition: .25s;
+        }
 
-    .navbar-link:hover {
-        opacity: .75;
-    }
+        .navbar-link:hover {
+            opacity: .75;
+        }
 
-    .dark-mode-button {
-        border: #325ba8;
-        color: white;
-        background-color: #325ba8;
-        width: 50px;
-        margin-left: 25px;
-        cursor: pointer;
-    }
+        .dark-mode-button {
+            display: flex;
+            align-items: center;
+            border: #325ba8;
+            color: white;
+            background-color: #325ba8;
+            width: 50px;
+            margin-left: 50px;
+            cursor: pointer;
+            transition: .25s;
+        }
+
+        .dark-mode-button:hover {
+            opacity: .75;
+        }
 
 /* General Styles */
 
@@ -69,62 +74,85 @@ main {
 /* Landing Styles */
 
     .landing-container {
-        height: 100vh;
-        margin-bottom: 250px;
+        height: 100%;
+        margin-bottom: 100px;
     }
 
-    .landing-header-image-container {
+    .landing-header-container {
+        display: flex;
         width: 100%;
         height: 375px;
         background-color: rgb(36, 36, 36);
     }
 
-    .landing-header-image {
-        margin-left: 375px;
-        width: 375px;
-        height: 375px;
-    }
+        .landing-header-inner-container {
+            width: 50%;
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+
+        .landing-header-image-container {
+            float: left;
+            width: 50%;
+            height: 100%;
+        }
+
+        .landing-header-image {
+            width: 100%;
+            height: 375px;
+        }
+
+        .landing-header-description-container {
+            width: 50%;
+            height: 100%;
+            float: right;
+            display: flex;
+            align-items: center;
+        }
+
+        .landing-header-description-container p {
+            color: white;
+        }
 
     .landing-description-container {
-        margin-left: 375px;
-        margin-right: 375px;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-bottom: 50px;
     }
 
     .landing-images-container {
-        margin-top: 250px;
-        margin-left: 375px;
-        margin-right: 375px;
+        margin-left: 25%;
+        margin-right: 25%;
     }
 
-    .landing-image {
-        width: 300px;
-        height: 200px;
-    }
+        .landing-image {
+            width: 300px;
+            height: 200px;
+        }
 
-    .resource-image {
-        float: left;
-        width: 33.33%;
-    }
+        .resource-image {
+            float: left;
+            width: 33.33%;
+        }
 
-    .row::after {
-        content: "";
-        clear: both;
-        display: table;
-    }
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
 
-    figcaption {
-        background-color: black;
-        color: white;
-        font-style: italic;
-        padding: 2px;
-        text-align: center;
-    }
+        figcaption {
+            background-color: black;
+            color: white;
+            font-style: italic;
+            padding: 2px;
+            text-align: center;
+        }
 
 /* Topic Styles */
 
     .categories-container {
-        height: 100vh;
-        margin-bottom: 50px;
+        height: 100%;
     }
 
     .category-grid-wrapper {
@@ -162,11 +190,11 @@ main {
 /* Forum Styles */
 
     .forum-container {
-        height: 100vh;
+        height: 100%;
     }
 
     .forum-create-post {
-        margin-left: 250px;
+        margin-left: 25%;
         background-color: #325ba8;
         border-radius: 5px;
         text-decoration: none;
@@ -174,20 +202,21 @@ main {
     }
 
     .forum-post-container {
-        margin-left: 250px;
-        margin-right: 250px;
+        margin-left: 25%;
+        margin-right: 25%;
         background-color: #e2e2e2;
         border-radius: 15px;
     }
 
-    .forum-post-link {
+    .forum-post {
+        margin-bottom: 10px;
         padding: 10px;
         text-decoration: none;
         border: 5px solid black;
         border-radius: 5px;
     }
 
-    .forum-post-link a {
+    .forum-post a {
         color: black;
         text-decoration: none;
     }
@@ -197,14 +226,17 @@ main {
 /* About Styles */
 
     .about-container {
-        height: 100vh;
+        height: 100%;
     }
 
     .about-description-container {
         border: 5px solid black;   
-        margin-left: 375px;
-        margin-right: 375px;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-bottom: 50px;
         word-wrap: break-word;
+        padding-left: 25px;
+        padding-right: 25px;
     }
 
 /* Footer Styles */
