@@ -13,11 +13,12 @@
     <nav class="navbar">
         <header class="navbar-header"><h1>Web Therapy</h1></header>
         <div class="navbar-links-container">
-            <a class="navbar-link" href="index.html">Home</a>
-            <a class="navbar-link" href="topics.html">Topics</a>
-            <a class="navbar-link" href="forum.html">Forum</a>
-            <a class="navbar-link" href="about.html">About Us</a>
-            <a class="navbar-link" href="login.html">Sign In</a>
+            <a class="navbar-link" href="index.php">Home</a>
+            <a class="navbar-link" href="topics.php">Topics</a>
+            <a class="navbar-link" href="forum.php">Forum</a>
+            <a class="navbar-link" href="about.php">About Us</a>
+            <a class="navbar-link" href="signUp.php">Sign Up</a>
+            <a class="navbar-link" href="login.php">Login</a>
             <!--<button class="dark-mode-button" type="button"><i class="fa fa-moon-o"></i></button>-->
         </div>
     </nav>

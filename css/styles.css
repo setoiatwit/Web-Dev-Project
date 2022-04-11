@@ -323,7 +323,6 @@ main {
     }
 
     .login-form {
-        margin-top: 12.5%;
         color: white;
         display: flex;
         flex-direction: column;
