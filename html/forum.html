@@ -16,18 +16,18 @@
             <a class="navbar-link" href="index.html">Home</a>
             <a class="navbar-link" href="topics.html">Topics</a>
             <a class="navbar-link" href="forum.html">Forum</a>
-            <a class="navbar-link" href="about.html">About</a>
-            <button class="dark-mode-button" type="button"><i class="fa fa-moon-o"></i></button>
+            <a class="navbar-link" href="about.html">About Us</a>
+            <a class="navbar-link" href="login.html">Sign In</a>
+            <!--<button class="dark-mode-button" type="button"><i class="fa fa-moon-o"></i></button>-->
         </div>
     </nav>
     <main>
         <section class="forum-container">
-            <div class="landing-header-container">
-            </div>
+            <div class="landing-header-container"></div>
             <header class="page-header"><h1>Forum</h1></header>
             <header class="section-header"><h1>Click on thread title to view comments</h1></header>
-            <a class="forum-create-post" href="createPost.html">Create Post</a>
             <section class="forum-post-container">
+                <button id="forum-create-post-button" class="forum-create-post-button">Create Post</button>
                 <div class="forum-post">
                     <a href="forum.html">Help! I've been feeling down lately for the past few months!</a>
                     <p>opened 50 minutes ago by Anonymous User to {Topic Name}</p>
@@ -40,30 +40,52 @@
                     <a href="forum.html">I just don't know what to anymore...</a>
                     <p>opened 5 hours ago by Anonymous User to {Topic Name}</p>
                 </div>
-                <div class="forum-post">
-                    <a href="forum.html">Help! I've been feeling down lately for the past few months!</a>
-                    <p>opened 50 minutes ago by Anonymous User to {Topic Name}</p>
+                
+                <div id="create-post-modal" class="create-post-modal">
+                    <div class="create-post-modal-container">
+                        <div class="create-post-modal-close">&times;</div>
+                        <div>
+                            <form>
+                                <label>Title</label><br>
+                                <input type="text" name="title"><br>
+                                <label>Description</label><br>
+                                <textarea name="description"></textarea><br>
+                                <label>Tags</label><br>
+                                <select name="tag">
+                                    <option value="depression">Depression</option>
+                                    <option value="anxiety">Anxiety</option>
+                                    <option value="ADHD">ADHD</option>
+                                </select>
+                                <br>
+                                <input class="modal-form-submit" type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
                 </div>
-                <div class="forum-post">
-                    <a href="forum.html">Anyone have any advice for me?</a>
-                    <p>opened 23 minutes ago by Anonymous User to {Topic Name}</p>
-                </div>
-                <div class="forum-post">
-                    <a href="forum.html">I just don't know what to anymore...</a>
-                    <p>opened 5 hours ago by Anonymous User to {Topic Name}</p>
-                </div>
-                <div class="forum-post">
-                    <a href="forum.html">Help! I've been feeling down lately for the past few months!</a>
-                    <p>opened 50 minutes ago by Anonymous User to {Topic Name}</p>
-                </div>
-                <div class="forum-post">
-                    <a href="forum.html">Anyone have any advice for me?</a>
-                    <p>opened 23 minutes ago by Anonymous User to {Topic Name}</p>
-                </div>
-                <div class="forum-post">
-                    <a href="forum.html">I just don't know what to anymore...</a>
-                    <p>opened 5 hours ago by Anonymous User to {Topic Name}</p>
-                </div>
+
+                <script>
+                    var createPostButton = document.getElementById("forum-create-post-button");
+                    var createPostModal = document.getElementById("create-post-modal");
+                    var closeModalButton = document.getElementsByClassName("create-post-modal-close")[0];
+
+                    // When the user clicks the button, open the modal 
+                    createPostButton.onclick = function() {
+                        createPostModal.style.display = "block";
+                    }
+
+                    // When the user clicks on <span> (x), close the modal
+                    closeModalButton.onclick = function() {
+                        createPostModal.style.display = "none";
+                    }
+
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function(event) {
+                        if (event.target == createPostModal) {
+                            createPostModal.style.display = "none";
+                        }
+                    }
+                </script>
+
             </section>
         </section>
         <footer class="footer-container">
