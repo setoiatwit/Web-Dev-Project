@@ -17,7 +17,7 @@
             <a class="navbar-link" href="topics.php">Topics</a>
             <a class="navbar-link" href="forum.php">Forum</a>
             <a class="navbar-link" href="about.php">About Us</a>
-            <a class="navbar-link" href="signUp.php">Sign Up</a>
+            <a class="navbar-link" href="signup.php">Sign Up</a>
             <a class="navbar-link" href="login.php">Login</a>
             <!--<button class="dark-mode-button" type="button"><i class="fa fa-moon-o"></i></button>-->
         </div>

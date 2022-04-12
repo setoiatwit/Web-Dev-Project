@@ -1,41 +1,37 @@
 <?php
-
 if (isset($_POST["submit"])) {
-    echo "It works";
-    $name = $_POST["submit"];
-    $username = $_POST["username"];
-    $password = $_POST["password"];
+    echo "Form Submitted";
+    echo "<br>";
+    if ($_POST["fullname"] == "" or $_POST["username"] == "" or $_POST["password"] == "" or $_POST["username"] == "") {
+        echo "<center><h1>Form is empty<h1></center>";
+    }
+    else {
+        require_once 'connectToDB.php';
+        $userId = uniqid();
+        $fullname = $_POST["fullname"];
+        $username = $_POST["username"];
+        $password = $_POST["password"];
+        echo 'userid: '.$userId;
+        echo "<br>";
+        echo 'fullname: '.$fullname;
+        echo "<br>";
+        echo 'username: '.$username;
+        echo "<br>";
+        echo 'password: '.$password;
+        echo "<br>";
 
-    require_once 'connectToDB.php';
-    require_once 'conditionChecker.php';
+        $hashedPassword = password_hash($password, PASSWORD_BCRYPT);
 
-    if (signUpInputEmpty($first, $last, $username, $password) !== false ) {
-        header("location: ../signUp.php");
-        exit();
-    }
-    if (firstNameInputEmpty($first) !== false ) {
-        header("location: ../signUp.php");
-        exit();
-    }
-    if (lastNameInputEmpty($last) !== false ) {
-        header("location: ../signUp.php");
-        exit();
-    }
-    if (usernameInputEmpty($username) !== false ) {
-        header("location: ../signUp.php");
-        exit();
-    }
-    if (passwordInputEmpty($password) !== false ) {
-        header("location: ../signUp.php");
-        exit();
-    }
+        echo 'hashed password: '.$hashedPassword;
+        echo "<br>";
 
-    createUser($pdo, $first, $last, $username, $password);
+        
+        // create query
+        $query = $pdo -> prepare('INSERT INTO users (userId, fullname, username, password) VALUES (?, ?, ?, ?)');
+        // execute query
+        $query -> execute(array($userId, $fullname, $username, $hashedPassword));
 
+        //header("location: login.php");
+    }
 }
-else {
-    header("location: ../signUp.php");
-    exit();
-}
-
 ?>

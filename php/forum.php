@@ -41,24 +41,34 @@
                     <a href="forum.html">I just don't know what to anymore...</a>
                     <p>opened 5 hours ago by Anonymous User to {Topic Name}</p>
                 </div>
+
+                <?php
+                require_once 'scripts/createPost.php';
+                ?>
                 
                 <div id="create-post-modal" class="create-post-modal">
                     <div class="create-post-modal-container">
                         <div class="create-post-modal-close">&times;</div>
                         <div>
-                            <form>
+                            <form class="create-post-form" method="post">
                                 <label>Title</label><br>
                                 <input type="text" name="title"><br>
                                 <label>Description</label><br>
                                 <textarea name="description"></textarea><br>
                                 <label>Tags</label><br>
                                 <select name="tag">
-                                    <option value="depression">Depression</option>
-                                    <option value="anxiety">Anxiety</option>
-                                    <option value="ADHD">ADHD</option>
+                                    <option value="Depression">Depression</option>
+                                    <option value="Anxiety Disorder">Anxiety Disorder</option>
+                                    <option value="Eating Disorder">Eating Disorder</option>
+                                    <option value="Post Traumatic Stress Disorder">Post Traumatic Stress Disorder</option>
+                                    <option value="Suicide">Suicide</option>
+                                    <option value="Bipolar">Bipolar</option>
+                                    <option value="Attention-Deficit/Hyperactivity Disorder">Attention-Deficit/Hyperactivity Disorder</option>
+                                    <option value="Obsessive-Compulsive Disorder">Obsessive-Compulsive Disorder</option>
+                                    <option value="Substance Use">Substance Use</option>
                                 </select>
                                 <br>
-                                <input class="modal-form-submit" type="submit" value="Submit">
+                                <input class="modal-form-submit" type="submit" name="submit">
                             </form>
                         </div>
                     </div>

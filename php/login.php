@@ -1,3 +1,6 @@
+<?php
+require_once 'scripts/loginUser.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,16 +28,16 @@
     <main>
         <section class="login-container">
             <div class="login-form-container">
-                <form class="login-form" action="scripts/login.php">
+                <form class="login-form">
                     <label>Username</label>
                     <br>
-                    <input class="login-form-input" type="text" id="username" />
+                    <input class="login-form-input" type="text" name="username" />
                     <br>
                     <label>Password</label>
                     <br>
-                    <input class="login-form-input" type="text" id="password" />
+                    <input class="login-form-input" type="password" name="password" />
                     <br>
-                    <input type="submit" name="submit">
+                    <button type="submit" name="submit">
                 </form>
             </div>
         </section>

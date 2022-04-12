@@ -28,15 +28,15 @@
             <header class="section-header"><h1>Select a topic to find related posts</h1></header>
             <div class="topics-grid-wrapper">
                 <div class="topics-grid-container">
-                    <a class="item" href="forum.html">Depression</a>
-                    <a class="item" href="forum.html">Anxiety Disorder</a>
-                    <a class="item" href="forum.html">Eating Disorder</a>
-                    <a class="item" href="forum.html">Post Traumatic Stress Disorder</a>
-                    <a class="item" href="forum.html">Suicide</a>
-                    <a class="item" href="forum.html">Bipolar</a>
-                    <a class="item" href="forum.html">Attention-Deficit/Hyperactivity Disorder</a>
-                    <a class="item" href="forum.html">Obsessive-Compulsive Disorder</a>
-                    <a class="item" href="forum.html">Substance Use</a>
+                    <a class="item" href="forum.php">Depression</a>
+                    <a class="item" href="forum.php">Anxiety Disorder</a>
+                    <a class="item" href="forum.php">Eating Disorder</a>
+                    <a class="item" href="forum.php">Post Traumatic Stress Disorder</a>
+                    <a class="item" href="forum.php">Suicide</a>
+                    <a class="item" href="forum.php">Bipolar</a>
+                    <a class="item" href="forum.php">Attention-Deficit/Hyperactivity Disorder</a>
+                    <a class="item" href="forum.php">Obsessive-Compulsive Disorder</a>
+                    <a class="item" href="forum.php">Substance Use</a>
                 </div>
             </div>
         </section>

@@ -1,3 +1,6 @@
+<?php
+require_once 'scripts/createUser.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +20,7 @@
             <a class="navbar-link" href="topics.php">Topics</a>
             <a class="navbar-link" href="forum.php">Forum</a>
             <a class="navbar-link" href="about.php">About Us</a>
-            <a class="navbar-link" href="signUp.php">Sign Up</a>
+            <a class="navbar-link" href="signup.php">Sign Up</a>
             <a class="navbar-link" href="login.php">Login</a>
             <!--<button class="dark-mode-button" type="button"><i class="fa fa-moon-o"></i></button>-->
         </div>
@@ -25,24 +28,20 @@
     <main>
         <section class="login-container">
             <div class="login-form-container">
-                <form class="login-form" method="post" action="scripts/createUser.php">
-                    <label>First Name</label>
+                <form class="login-form" method="post">
+                    <label>Full Name</label>
                     <br>
-                    <input class="login-form-input" type="text" id="firstname" />
-                    <br>
-                    <label>Last Name</label>
-                    <br>
-                    <input class="login-form-input" type="text" id="firstname" />
+                    <input class="login-form-input" type="text" name="fullname" />
                     <br>
                     <label>Username</label>
                     <br>
-                    <input class="login-form-input" type="text" id="username" />
+                    <input class="login-form-input" type="text" name="username" />
                     <br>
                     <label>Password</label>
                     <br>
-                    <input class="login-form-input" type="text" id="password" />
+                    <input class="login-form-input" type="password" name="password" />
                     <br>
-                    <input type="submit" name="submit">
+                    <button type="submit" name="submit">
                 </form>
             </div>
         </section>
