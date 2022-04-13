@@ -11,7 +11,7 @@ if (isset($_POST["submit"])) {
         $postTag = $_POST["tag"];
 
         date_default_timezone_set("America/New_York");
-        $postedAt = date("h:i");
+        $postedAt = date("H:i");
 
         $query = $pdo -> prepare('INSERT INTO posts (postId, postTitle, postDescription, postTag, postedAt) VALUES (?, ?, ?, ?, ?)');
         $query -> execute(array($postId, $postTitle, $postDescription, $postTag, $postedAt));

@@ -30,9 +30,9 @@
                         <img class="landing-header-image" src="../images/img_prevention.png" />
                     </a>
                     <div class="landing-header-description-container">
-                        <p>
-                            You are not alone. Click on the image or call the number listed on the image to get connected with the Suicide Prevention Hotline
-                        </p>
+                        <p>Web Therapy for better help.</p>
+                        <br>
+                        <p>Need someone to talk to?</p>
                     </div>
                 </div>
             </div>

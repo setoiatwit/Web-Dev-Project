@@ -31,15 +31,15 @@
                 <button id="forum-create-post-button" class="forum-create-post-button">Create Post</button>
                 <div class="forum-post">
                     <a href="forum.html">Help! I've been feeling down lately for the past few months!</a>
-                    <p>opened 50 minutes ago by Anonymous User to Depression</p>
+                    <p>opened at 12:46 Anonymous User to Depression</p>
                 </div>
                 <div class="forum-post">
                     <a href="forum.html">Anyone have any advice for me?</a>
-                    <p>opened 23 minutes ago by Anonymous User to Bipolar</p>
+                    <p>opened at 16:54 Anonymous User to Bipolar</p>
                 </div>
                 <div class="forum-post">
                     <a href="forum.html">I just don't know what to anymore...</a>
-                    <p>opened 5 hours ago by Anonymous User to Substance Use</p>
+                    <p>opened at 18:23 Anonymous User to Substance Use</p>
                 </div>
                 <?php
                     require_once "scripts/getPosts.php";
@@ -52,7 +52,7 @@
                 <div id="create-post-modal" class="create-post-modal">
                     <div class="create-post-modal-container">
                         <div class="create-post-modal-close">&times;</div>
-                        <div>
+                        <div class="create-post-modal-form-container">
                             <form class="create-post-form" method="post">
                                 <label>Title</label><br>
                                 <input type="text" name="title"><br>
@@ -71,7 +71,7 @@
                                     <option value="Substance Use">Substance Use</option>
                                 </select>
                                 <br>
-                                <input class="modal-form-submit" type="submit" name="submit">
+                                <button class="submit-button" type="submit" name="submit">Post</button>
                             </form>
                         </div>
                     </div>

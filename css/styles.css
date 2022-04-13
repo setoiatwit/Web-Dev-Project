@@ -79,10 +79,10 @@ main {
     .submit-button {
         background-color: #04AA6D;
         color: white;
-        height: 50px;
         border: none;
         cursor: pointer;
         transition: .5s;
+        padding: 10px;
     }
     
     .submit-button:hover {
@@ -100,11 +100,12 @@ main {
     .landing-header-container {
         display: flex;
         width: 100%;
-        height: 250px;
+        height: 25vh;
         background-color: rgb(36, 36, 36);
     }
 
         .landing-header-inner-container {
+
             margin-left: 25%;
             margin-right: 25%;
         }
@@ -125,7 +126,9 @@ main {
             height: 100%;
             float: right;
             display: flex;
+            flex-direction: column;
             align-items: center;
+            justify-content: center;
         }
 
         .landing-header-description-container p {
@@ -213,6 +216,7 @@ main {
         background-color: #325ba8;
         color: white;
         cursor: pointer;
+        font-size: large    ;
     }
 
     .item:link, .item:visited {
@@ -223,7 +227,7 @@ main {
 /* Forum Styles */
 
     .forum-container {
-        height: 100%;
+        min-height: 100vh;
     }
 
     .forum-post-container {
@@ -235,6 +239,7 @@ main {
     }
 
     .forum-post {
+        margin-bottom: 5px;
         padding: 10px;
         text-decoration: none;
         border: 2px solid #325ba8;
@@ -256,6 +261,8 @@ main {
         border-radius: 10px;
         text-decoration: none;
         color: white;
+        cursor: pointer;
+        margin-bottom: 5px;
     }
 
     /* Post Creation Modal */
@@ -283,6 +290,15 @@ main {
         border-radius: 5px;
         width: 50%;
         height: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .create-post-modal-form-container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;    
     }
 
     .create-post-modal-close {
@@ -301,10 +317,22 @@ main {
         margin-top: 25px;
     }
 
+    .create-post-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .create-post-form select {
+        margin-bottom: 5px;
+    }
+
 /* About Styles */
 
     .about-container {
-        height: 100%;
+        min-height: 100vh;
     }
 
     .about-description-container { 
@@ -332,7 +360,7 @@ main {
     }
 
     .login-form-container {
-        width: 50%;
+        width: 25%;
         height: 50%;
         display: flex;
         align-items: center;
