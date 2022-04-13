@@ -20,9 +20,14 @@ main {
     }
 
         .navbar-header {
-            font-size: 1rem;
             margin: .5rem;
             margin-left: 5rem;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .navbar-header:link, .navbar-header:visited {
+            color: white;
         }
 
         .navbar-links-container {

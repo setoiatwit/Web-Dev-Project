@@ -11,7 +11,7 @@
 </head>
 <body>
     <nav class="navbar">
-        <header class="navbar-header"><h1>Web Therapy</h1></header>
+        <header class="navbar-header"><h1><a class="navbar-header" href="index.php">Web Therapy</a></h1></header>
         <div class="navbar-links-container">
             <a class="navbar-link" href="index.php">Home</a>
             <a class="navbar-link" href="topics.php">Topics</a>
