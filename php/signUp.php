@@ -1,5 +1,5 @@
 <?php
-require_once 'scripts/createUser.php';
+    require_once "scripts/createUser.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -41,7 +41,7 @@ require_once 'scripts/createUser.php';
                     <br>
                     <input class="login-form-input" type="password" name="password" />
                     <br>
-                    <button type="submit" name="submit">
+                    <button class="submit-button" type="submit" name="submit">Create Account</button>
                 </form>
             </div>
         </section>

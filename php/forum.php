@@ -31,19 +31,22 @@
                 <button id="forum-create-post-button" class="forum-create-post-button">Create Post</button>
                 <div class="forum-post">
                     <a href="forum.html">Help! I've been feeling down lately for the past few months!</a>
-                    <p>opened 50 minutes ago by Anonymous User to {Topic Name}</p>
+                    <p>opened 50 minutes ago by Anonymous User to Depression</p>
                 </div>
                 <div class="forum-post">
                     <a href="forum.html">Anyone have any advice for me?</a>
-                    <p>opened 23 minutes ago by Anonymous User to {Topic Name}</p>
+                    <p>opened 23 minutes ago by Anonymous User to Bipolar</p>
                 </div>
                 <div class="forum-post">
                     <a href="forum.html">I just don't know what to anymore...</a>
-                    <p>opened 5 hours ago by Anonymous User to {Topic Name}</p>
+                    <p>opened 5 hours ago by Anonymous User to Substance Use</p>
                 </div>
+                <?php
+                    require_once "scripts/getPosts.php";
+                ?>
 
                 <?php
-                require_once 'scripts/createPost.php';
+                    require_once "scripts/createPost.php";
                 ?>
                 
                 <div id="create-post-modal" class="create-post-modal">
@@ -87,13 +90,6 @@
                     // When the user clicks on <span> (x), close the modal
                     closeModalButton.onclick = function() {
                         createPostModal.style.display = "none";
-                    }
-
-                    // When the user clicks anywhere outside of the modal, close it
-                    window.onclick = function(event) {
-                        if (event.target == createPostModal) {
-                            createPostModal.style.display = "none";
-                        }
                     }
                 </script>
 

@@ -1,5 +1,5 @@
 <?php
-require_once 'scripts/loginUser.php';
+    require_once 'scripts/loginUser.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -37,7 +37,7 @@ require_once 'scripts/loginUser.php';
                     <br>
                     <input class="login-form-input" type="password" name="password" />
                     <br>
-                    <button type="submit" name="submit">
+                    <button class="submit-button" type="submit" name="submit">Login</button>
                 </form>
             </div>
         </section>

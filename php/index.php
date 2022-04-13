@@ -31,8 +31,7 @@
                     </a>
                     <div class="landing-header-description-container">
                         <p>
-                            Globally, 800,000 people die a year from suicide, which doubles the number of yearly homicide. 
-                            Suicide is the number one leading causes of death in young people.
+                            You are not alone. Click on the image or call the number listed on the image to get connected with the Suicide Prevention Hotline
                         </p>
                     </div>
                 </div>
