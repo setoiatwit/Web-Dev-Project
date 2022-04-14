@@ -20,7 +20,7 @@ Log-in / Log-out
 
 ### Team
 
-Ian Seto
+Ian Seto - Full-stack Developer - HTML, CSS, PHP, MySQL
 
 Will Tran
 
